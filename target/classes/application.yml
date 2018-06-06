@@ -1,0 +1,21 @@
+server:
+  port: 8889
+spring:
+  application:
+      name: mutual-server
+  datasource:
+      master:
+          url: jdbc:mysql://192.168.2.2:3306/gzytest?useUnicode=true&characterEncoding=utf-8
+          username: root
+          password: eson
+          driver-class-name: com.mysql.jdbc.Driver
+          platform: mysql
+          type: com.alibaba.druid.pool.DruidDataSource
+
+      slave:
+          url: jdbc:mysql://192.168.2.2:3306/gzytest?useUnicode=true&characterEncoding=utf-8
+          username: root
+          password: eson
+          driver-class-name: com.mysql.jdbc.Driver
+          platform: mysql
+          type: com.alibaba.druid.pool.DruidDataSource
